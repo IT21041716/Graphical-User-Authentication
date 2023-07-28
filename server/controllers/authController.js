@@ -147,7 +147,7 @@ export const pwdResetRequest = async (req, res) => {
                 email: req.body.email,
                 otp: OTP
             }
-            const link = `http://localhost:3001/pwdReset1/${pwResetToken}`
+            const link = `http://localhost:3000/pwdReset1/${pwResetToken}`
             const mailData = {
                 to: req.body.email,
                 subject: "Password Reset Request",
